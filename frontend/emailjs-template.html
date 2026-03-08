@@ -1,0 +1,73 @@
+<!--
+  EMAILJS TEMPLATE - Copy this HTML into your EmailJS template (Dashboard > Email Templates)
+  
+  Template variables used: {{to_email}} {{to_name}} {{message}} {{username}} {{started_at}} {{expected_end_at}}
+  In EmailJS: set "To Email" = {{to_email}}, "Subject" = SafeRoute Emergency Alert
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeRoute Emergency Alert</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f5; -webkit-font-smoothing: antialiased;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #f4f4f5; padding: 40px 20px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 480px; background-color: #ffffff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08); overflow: hidden;">
+          <!-- Header -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #c47ac0 0%, #8b5a88 100%); padding: 28px 32px; text-align: center;">
+              <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 700; letter-spacing: -0.5px;">SafeRoute</h1>
+              <p style="margin: 6px 0 0; color: rgba(255,255,255,0.9); font-size: 13px;">Emergency Alert</p>
+            </td>
+          </tr>
+          <!-- Alert badge -->
+          <tr>
+            <td style="padding: 24px 32px 0;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #fef2f2; border: 1px solid #fecaca; border-radius: 12px;">
+                <tr>
+                  <td style="padding: 16px 20px; text-align: center;">
+                    <span style="display: inline-block; background-color: #dc2626; color: #ffffff; font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Urgent</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Message -->
+          <tr>
+            <td style="padding: 24px 32px;">
+              <p style="margin: 0 0 12px; color: #6b7280; font-size: 14px;">You have received an emergency alert from SafeRoute.</p>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin: 12px 0 0; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+                <tr>
+                  <td style="padding: 12px 14px; background-color: #fafafa; color: #6b7280; font-size: 12px; width: 38%;">User</td>
+                  <td style="padding: 12px 14px; background-color: #ffffff; color: #111827; font-size: 12px;">{{username}}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 14px; background-color: #fafafa; color: #6b7280; font-size: 12px; width: 38%;">Journey started</td>
+                  <td style="padding: 12px 14px; background-color: #ffffff; color: #111827; font-size: 12px;">{{started_at}}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 14px; background-color: #fafafa; color: #6b7280; font-size: 12px; width: 38%;">Expected end</td>
+                  <td style="padding: 12px 14px; background-color: #ffffff; color: #111827; font-size: 12px;">{{expected_end_at}}</td>
+                </tr>
+              </table>
+              <div style="background-color: #f9fafb; border-left: 4px solid #c47ac0; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 16px 0;">
+                <p style="margin: 0; color: #1f2937; font-size: 16px; line-height: 1.6;">{{message}}</p>
+              </div>
+              <p style="margin: 20px 0 0; color: #9ca3af; font-size: 13px;">Please reach out to check on them as soon as possible.</p>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 20px 32px 28px; border-top: 1px solid #e5e7eb;">
+              <p style="margin: 0; color: #9ca3af; font-size: 12px; text-align: center;">Sent via SafeRoute · Women Travel Safety</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

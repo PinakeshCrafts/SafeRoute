@@ -1,0 +1,151 @@
+.panel {
+  position: absolute;
+  top: 88px;
+  left: 18px;
+  width: min(360px, calc(100vw - 36px));
+  background: rgba(26, 26, 31, 0.92);
+  border: 1px solid rgba(46, 46, 54, 0.8);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 14px 14px 12px;
+  z-index: 1200;
+  backdrop-filter: blur(10px);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.titleRow h3 {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.badge {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.warn {
+  background: rgba(240, 173, 78, 0.14);
+  border: 1px solid rgba(240, 173, 78, 0.3);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 10px;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+}
+
+.section {
+  border-top: 1px solid rgba(46, 46, 54, 0.8);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.pick,
+.pickActive {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+
+.pickActive {
+  background: rgba(196, 122, 192, 0.18);
+  border-color: rgba(196, 122, 192, 0.6);
+  color: var(--text);
+}
+
+.coords {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.value {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.metricValue {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.countdown {
+  margin-top: 10px;
+}
+
+.overdue {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--danger);
+}
+
+.start,
+.end {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 900;
+}
+
+.start {
+  background: var(--accent);
+  color: #fff;
+}
+
+.start:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.end {
+  background: var(--danger);
+  color: #fff;
+}
+
+.error {
+  margin-top: 10px;
+  color: var(--danger);
+  font-size: 0.9rem;
+}
+
+.muted {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
